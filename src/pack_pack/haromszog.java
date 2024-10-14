@@ -37,9 +37,11 @@ public class haromszog   extends  sokszog{
     public void setC( double c) {
         this.c = c;
     }
+    @Override
     public  double getkerulet(){
         return (this.getA()+b+c);
     }
+    @Override
     public  double getTerulet(){
         double s=this.getkerulet()/2;
 

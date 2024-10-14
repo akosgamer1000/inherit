@@ -20,10 +20,11 @@ public class teglalap extends sokszog{
     public void setB( double b) {
         this.b = b;
     }
-
+    @Override
     public  double getkerulet(){
             return (this.getA()+b)*2;
     }
+    @Override
     public  double getTerulet(){
         return this.getA()*b;
     }

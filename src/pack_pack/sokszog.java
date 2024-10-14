@@ -1,7 +1,10 @@
 package pack_pack;
 
-public abstract class sokszog {
+import java.util.Random;
+
+abstract class sokszog {
     private  double a;
+    public static Random s=new Random();
 
     public sokszog( double a) {
         this.a = a;
