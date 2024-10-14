@@ -1,5 +1,7 @@
 package pack_pack;
 
+import java.time.LocalDateTime;
+
 public class jarmu {
     private String Rendszam;
     private String manufacture;
@@ -64,5 +66,17 @@ public class jarmu {
     public void setManufacture(String manufacture) {
         this.manufacture = manufacture;
     }
-
+    public int getAge(){
+        return LocalDateTime.now().getYear()-yearofManufacture;
+    }
+    @Override
+    public String toString() {
+        return
+                "Rendszam='" + Rendszam + '\'' +
+                ", manufacture='" + manufacture + '\'' +
+                ", model='" + model + '\'' +
+                ", yearofManufacture=" + yearofManufacture +
+                ", color='" + color + '\'' +
+                ", numberofwheel=" + numberofwheel ;
+    }
 }

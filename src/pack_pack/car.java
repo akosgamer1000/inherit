@@ -6,4 +6,9 @@ public class car extends jarmu {
     public car(String color, String model, int yearofManufacture, String manufacture, String rendszam) {
         super(num, color, model, yearofManufacture, manufacture, rendszam);
     }
+
+    @Override
+    public String toString() {
+        return "car- "  + super.toString();
+    }
 }
